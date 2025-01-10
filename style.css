@@ -1,0 +1,113 @@
+
+body {
+    background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Vibrant gradient background */
+    font-family: 'Roboto', Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+    color: #333;
+}
+
+
+#container {
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    animation: fadeIn 1s ease-in-out; 
+}
+
+
+h2 {
+    color: #444;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+img {
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+
+input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+button {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c); /* Attractive gradient */
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+    margin: 10px 0;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    transform: scale(1.05); 
+}
+
+button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+
+#msg {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.success {
+    color: #4CAF50;
+}
+
+.error {
+    color: #d9534f;
+}
+
+
+.handshake {
+    animation: handshake 0.5s ease-in-out;
+}
+
+.broken-handshake {
+    animation: shake 0.5s ease-in-out;
+}
+
+
+@keyframes handshake {
+    0% { transform: rotate(0); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0); }
+}
+
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
